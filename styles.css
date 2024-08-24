@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: url("3409297.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(51, 51, 51, 0.8); /* Slight transparency for the navbar */
+    padding: 1rem 2rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-links li {
+    margin-left: 2rem;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Header */
+header {
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    text-shadow: 2px 3px 4px rgba(231, 228, 28, 0.8);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Footer */
+footer {
+    background: rgba(16, 15, 15, 0.8); /* Slight transparency for the footer */
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.footer-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-logo {
+    color: white;
+    display: inline-block;
+    
+}
+
+
+.social-links a:hover .social-icon {
+    opacity: 0.8;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(51, 51, 51, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 1.3rem;
+    }
+
+   
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    nav .logo {
+        font-size: 1.2rem;
+    }
+}
